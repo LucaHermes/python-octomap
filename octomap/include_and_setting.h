@@ -4,6 +4,7 @@
 #ifndef OCTOMAP_DEPRECATED
 #define insertScan insertPointCloud
 #endif
+#include <octomap/ColorOcTree.h>
 #include <octomap/OccupancyOcTreeBase.h>
 #include <octomap/OcTree.h>
 

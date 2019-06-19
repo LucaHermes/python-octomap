@@ -16,6 +16,11 @@ cdef extern from "octomap/OcTreeKey.h" namespace "octomap":
 cdef extern from "octomap/OcTree.h" namespace "octomap":
     cdef cppclass OcTree
 
+
+cdef extern from "octomap/ColorOcTree.h" namespace "octomap":
+    cdef cppclass ColorOcTree
+
+
 cdef extern from "dynamicEDT3D/dynamicEDTOctomap.h":
     cdef cppclass DynamicEDTOctomap:
         DynamicEDTOctomap(float maxdist, OcTree *_octree, point3d bbxMin, point3d bbxMax, bool treatUnknownAsOccupied)
